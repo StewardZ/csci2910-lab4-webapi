@@ -44,7 +44,7 @@ def get_forecast(latitude, longitude):
     response = requests.get(FORECAST_URL, params=params)
     data = response.json()
 
-    daily = data.get("daily", {})
+    daily = data["daily"]
 
     forecast_days = []
 
@@ -85,3 +85,4 @@ def forecast():
 if __name__ == "__main__":
 
     app.run(debug=True)
+
