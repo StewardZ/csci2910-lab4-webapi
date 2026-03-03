@@ -13,9 +13,8 @@ This demonstrates how a server-side Python application can make API requests and
 
 ## Technologies Used
 - Python 3.9+
-- Flask
+- JSON
 - requests
-- HTML (Jinja templates)
 - Open-Meteo API
 
 ## API Endpoints Used
