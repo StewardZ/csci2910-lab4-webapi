@@ -20,7 +20,7 @@ This demonstrates how a server-side Python application can make API requests and
 ## API Endpoints Used
 
 ### 1) Geocoding Endpoint
-City name → coordinates
+City name to coordinates
 
 Example request:
 https://geocoding-api.open-meteo.com/v1/search?name=Johnson%20City&count=1&language=en&format=json
@@ -47,8 +47,11 @@ I had trouble understanding how the forecast data was structured because it come
 ### Issue 3
 I improved the user experience by adding a simple error message on the home page when a city is not found.
 
+### Issue 4
+Updated the printed forecast in the terminal for improved user readability.
+
 ## What I Learned
 This lab helped me understand how backend applications talk to external services using HTTP requests. It also gave me practice reading JSON responses and turning API data into something useful on a webpage.
 
 ## Final Reflection
-Working with a real API made it clear how common APIs are in modern apps and how important it is to handle errors cleanly.
+Working with a real API made it clear how common APIs are in everyday apps and showed how important it is to learn to how to debug and fix issue that come about since one little issue can throw it all off.
