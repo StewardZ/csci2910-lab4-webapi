@@ -11,12 +11,6 @@ The user enters a city name, and the app:
 
 This demonstrates how a server-side Python application can make API requests and use JSON responses.
 
-## Technologies Used
-- Python 3.9
-- JSON
-- requests
-- Open-Meteo API
-
 ## API Endpoints Used
 
 ### 1) Geocoding Endpoint
