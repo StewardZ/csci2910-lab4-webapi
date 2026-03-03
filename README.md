@@ -1,5 +1,5 @@
-# csci2910-lab4-webapi
-Weather terminal app using Open-Meteo API (CSCI 2910 Lab 4)
+# lab4-webapi
+Weather terminal app using Open-Meteo API (Lab 4)
 
 ## Project Overview
 This project is a terminal application that integrates the Open-Meteo API.
