@@ -1,8 +1,6 @@
 # csci2910-lab4-webapi
 Flask weather web app using Open-Meteo API (CSCI 2910 Lab 4)
 
----
-
 ## Project Overview
 This project is a Flask web application that integrates the Open-Meteo API.
 
@@ -13,16 +11,12 @@ The user enters a city name, and the app:
 
 This demonstrates how a server-side Python application can make API requests and use JSON responses.
 
----
-
 ## Technologies Used
 - Python 3.9+
 - Flask
 - requests
 - HTML (Jinja templates)
 - Open-Meteo API
-
----
 
 ## API Endpoints Used
 
@@ -38,15 +32,11 @@ Coordinates → daily forecast
 Example request:
 https://api.open-meteo.com/v1/forecast?latitude=36.3134&longitude=-82.3535&daily=temperature_2m_max,temperature_2m_min,precipitation_sum&temperature_unit=fahrenheit&timezone=auto
 
----
-
 ## Where API Calls Occur in Code
 Both API calls occur inside the `/forecast` route in `main.py`.
 
 - API Call #1 happens in `geocode_city()`
 - API Call #2 happens in `get_forecast()`
-
----
 
 ## Issues
 ### Issue 1
@@ -58,7 +48,8 @@ I had trouble understanding how the forecast data was structured because it come
 ### Issue 3
 I improved the user experience by adding a simple error message on the home page when a city is not found.
 
----
-
 ## What I Learned
 This lab helped me understand how backend applications talk to external services using HTTP requests. It also gave me practice reading JSON responses and turning API data into something useful on a webpage.
+
+## Final Reflection
+Working with a real API made it clear how common APIs are in modern apps and how important it is to handle errors cleanly.
