@@ -1,13 +1,13 @@
 # csci2910-lab4-webapi
-Flask weather web app using Open-Meteo API (CSCI 2910 Lab 4)
+Weather terminal app using Open-Meteo API (CSCI 2910 Lab 4)
 
 ## Project Overview
-This project is a Flask web application that integrates the Open-Meteo API.
+This project is a terminal application that integrates the Open-Meteo API.
 
 The user enters a city name, and the app:
 1. Calls the Open-Meteo Geocoding API to convert the city into latitude/longitude
 2. Calls the Open-Meteo Forecast API to retrieve a 7-day forecast
-3. Displays the forecast in a table on a webpage
+3. Displays the forecast in a table in the terminal
 
 This demonstrates how a server-side Python application can make API requests and use JSON responses.
 
@@ -26,7 +26,7 @@ Example request:
 https://geocoding-api.open-meteo.com/v1/search?name=Johnson%20City&count=1&language=en&format=json
 
 ### 2) Forecast Endpoint
-Coordinates → daily forecast
+Coordinates to daily forecast
 
 Example request:
 https://api.open-meteo.com/v1/forecast?latitude=36.3134&longitude=-82.3535&daily=temperature_2m_max,temperature_2m_min,precipitation_sum&temperature_unit=fahrenheit&timezone=auto
