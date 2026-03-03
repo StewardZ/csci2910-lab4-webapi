@@ -20,7 +20,7 @@ def geocode_city(city_name):
 
     response = requests.get(GEOCODE_URL, params=params)
 
-    print("\n=== GEOCODING RESPONSE (RAW JSON RECEIVED) ===")
+    print("\n GEOCODING RESPONSE (RAW JSON RECEIVED) ")
     print(json.dumps(response.json(), indent=4))
 
     data = response.json()
@@ -76,14 +76,14 @@ def get_forecast(latitude, longitude):
 
 
 def main():
-    print(" Weather Forecast Program (Open-Meteo API) ")
+    print(" Weather Forecast Program (Open-Meteo) ")
 
     city = input("\nEnter a city name: ")
 
     location = geocode_city(city)
 
     if not location:
-        print("\nCity not found.")
+        print("\nCity not found")
         return
 
     print("\nLocation Found:")
@@ -94,10 +94,10 @@ def main():
     print("\n FORMATTED FORECAST OUTPUT ")
 
     for day in forecast_data:
-        print(f"\nDate: {day['date']}")
-        print(f"  High: {day['tmax']}°F")
-        print(f"  Low:  {day['tmin']}°F")
-        print(f"  Precipitation: {day['precip']}")
+        print(f"\n|Date: {day['date']}|")
+        print(f"  |High: {day['tmax']}°F|")
+        print(f"  |Low:  {day['tmin']}°F|")
+        print(f"  |Precipitation: {day['precip']}|")
 
 
 if __name__ == "__main__":
