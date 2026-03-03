@@ -1,10 +1,11 @@
 import requests
 import json
 
+# API URLs
 GEOCODE_URL = "https://geocoding-api.open-meteo.com/v1/search"
 FORECAST_URL = "https://api.open-meteo.com/v1/forecast"
 
-
+# API usage to find city cordinates
 def geocode_city(city_name):
     params = {
         "name": city_name,
@@ -38,7 +39,7 @@ def geocode_city(city_name):
         "admin1": result.get("admin1")
     }
 
-
+# API usage to find weather forecast for cities cordinates
 def get_forecast(latitude, longitude):
     params = {
         "latitude": latitude,
@@ -74,7 +75,7 @@ def get_forecast(latitude, longitude):
 
     return forecast_days
 
-
+# main program to print JSON and weather forecast
 def main():
     print(" Weather Forecast Program (Open-Meteo) ")
 
@@ -99,7 +100,7 @@ def main():
         print(f"  |Low:  {day['tmin']}°F|")
         print(f"  |Precipitation: {day['precip']}|")
 
-
+# program start
 if __name__ == "__main__":
     main()
 
